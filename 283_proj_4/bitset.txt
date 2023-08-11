@@ -1,0 +1,7 @@
+	My bitset is better than the STL bitset container because it takes up less memory.
+I stored my bitset in an unsigned char but treated it as an int so it would use
+each one of the char's 8 bits. Also this implementation is faster because I do not have
+extra memory for functions that pertain to bitsets that aren't needed for this program.
+	I utilized it in my program by converting the root's property value into a vector of
+unsigned chars. Then I XOR-ed the root's property value with all the other property values
+to get a relevance value. Then when I went to sort, I sorted by relevance. 

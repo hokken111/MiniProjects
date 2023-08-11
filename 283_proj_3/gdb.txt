@@ -1,0 +1,20 @@
+(gdb) run
+Starting program: /afs/umich.edu/user/h/e/hejohnso/Desktop/EECS 281/Project3/seg_fault 
+(word) _ _ _ _ _ _ _ _ _ 
+(word) (word) _ _ _ _ _ _ _ _ 
+(word) (word) (word) _ _ _ _ _ _ _ 
+(word) (word) (word) (word) _ _ _ _ _ _ 
+(word) (word) (word) (word) (word) _ _ _ _ _ 
+(word) (word) (word) (word) (word) (word) _ _ _ _ 
+(word) (word) (word) (word) (word) (word) (word) _ _ _ 
+(word) (word) (word) (word) (word) (word) (word) (word) _ _ 
+(word) (word) (word) (word) (word) (word) (word) (word) (word) _ 
+(word) (word) (word) (word) (word) (word) (word) (word) (word) (word) 
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00002aaaaad649de in std::basic_string<char, std::char_traits<char>, std::allocator<char> >::assign(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () from /usr/lib64/libstdc++.so.6
+(gdb) where
+#0  0x00002aaaaad649de in std::basic_string<char, std::char_traits<char>, std::allocator<char> >::assign(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () from /usr/lib64/libstdc++.so.6
+#1  0x0000000000400ec2 in CompleteBinaryTree<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >::append (this=0x7fffffffe340, newElt=...)
+    at complete_binary_tree.cpp:90
+#2  0x0000000000400bb3 in main () at seg_fault.cpp:8

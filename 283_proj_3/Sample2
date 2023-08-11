@@ -1,0 +1,14 @@
+file1.txt 1
+file10.txt 10
+file3.txt 3
+file4.txt 4
+file7.txt 7
+$ save
+$ print
+$ print
+$ history
+$ revert
+$ history
+$ print
+$ print
+$ quit

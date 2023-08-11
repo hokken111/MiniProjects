@@ -1,0 +1,11 @@
+file1.txt 1
+file10.txt 10
+file4.txt 4
+$ print
+file5.txt 5
+file9.txt 9
+$ history
+$ clear
+$ history
+$ print
+$ quit
